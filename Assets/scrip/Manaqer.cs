@@ -7,12 +7,30 @@ public class Manaqer : MonoBehaviour
 
     private void Start()
     {
-        Vector3 pos = new Vector3();
-        pos = posicion();
-        Heroe heroe = new Heroe(Color.blue);
+		
+       // Heroe heroe = new Heroe(Color.blue);
 
-       // Zombie z = new Zombie(Color.magenta, pos);
+		for (int i = 0; i < 20; i++) 
+		{
+			GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			Vector3 pos = new Vector3();
+			pos = posicion();
 
+			switch ()
+			{
+			case 1:
+				//Zombie p = new Zombie(Color.magenta,pos);
+				break;
+			case 2:
+				//Zombie x = new Zombie(Color.green, pos);
+				break;
+			case 3:
+				//Zombie z = new Zombie(Color.cyan, pos);
+				break;
+
+			}
+
+		}
 
         int color;
         
@@ -21,13 +39,13 @@ public class Manaqer : MonoBehaviour
         switch (color)
         {
             case 1:
-                Zombie p = new Zombie(Color.magenta,pos);
+                //Zombie p = new Zombie(Color.magenta,pos);
                 break;
             case 2:
-                Zombie x = new Zombie(Color.green, pos);
+                //Zombie x = new Zombie(Color.green, pos);
                 break;
             case 3:
-                Zombie z = new Zombie(Color.cyan, pos);
+                //Zombie z = new Zombie(Color.cyan, pos);
                 break;
            
         }
@@ -36,7 +54,7 @@ public class Manaqer : MonoBehaviour
 
 
 
-Ciudadano c = new Ciudadano (pos);
+//Ciudadano c = new Ciudadano (pos);
 
         
         
